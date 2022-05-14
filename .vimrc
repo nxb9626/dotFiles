@@ -1,6 +1,8 @@
-set number relativenumber
+syntax on
+set number
+set wildmenu
+
 set undodir=~/.vim/undodir
-set tabstop=2
 set background=dark
 set t_Co=256
 
