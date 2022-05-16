@@ -1,6 +1,7 @@
 syntax on
 set number
 set wildmenu
+set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 set undodir=~/.vim/undodir
 set background=dark
