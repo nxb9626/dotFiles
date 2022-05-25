@@ -9,7 +9,14 @@ ZSH_THEME="refined"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+ENABLE_CORRECTION="true"
+
 
 # Aliases
 alias vim="nvim"
-alias cat="bat"
+alias ls="ls --color=auto"
+alias lsa="ls -a"
+
+bindkey '^[[1;5d' backward-word
+bindkey '^[[1;5c' backward-word
+# computer specific stuff below
