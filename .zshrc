@@ -16,7 +16,7 @@ ENABLE_CORRECTION="true"
 alias vim="nvim"
 alias ls="ls --color=auto"
 alias lsa="ls -a"
-
+alias gs="git status"
 bindkey '^[[1;5d' backward-word
 bindkey '^[[1;5c' backward-word
 # computer specific stuff below
