@@ -6,6 +6,7 @@ set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
 set undodir=~/.vim/undodir
 set background=dark
 set t_Co=256
+set mouse=a
 "remapping stuff
 nmap <F2> 0i//<ESC>
 nmap <F3> 0dldl
@@ -23,9 +24,12 @@ imap <F1> <Esc>
 call plug#begin()
 Plug 'rust-lang/rust.vim'
 syntax enable
+
 filetype plugin indent on
 
 Plug 'dense-analysis/ale'
 
-
+Plug 'preservim/nerdtree'
+"autocmd VimEnter * NERDTree | wincmd p
+nnoremap <C-t> :NERDTreeToggle<CR>
 call plug#end()

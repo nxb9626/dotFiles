@@ -12,4 +12,3 @@ source $ZSH/oh-my-zsh.sh
 
 # Aliases
 alias vim="nvim"
-alias cat="bat"
