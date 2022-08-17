@@ -31,5 +31,5 @@ Plug 'dense-analysis/ale'
 
 Plug 'preservim/nerdtree'
 "autocmd VimEnter * NERDTree | wincmd p
-nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-b> :NERDTreeToggle<CR>
 call plug#end()
