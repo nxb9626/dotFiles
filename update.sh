@@ -4,6 +4,6 @@ cp ~/.tmux.conf ./.tmux.conf
 echo zsh
 cp ~/.zshrc ./.zshrc
 echo neovim
-cp ~/.config/nvim/init.vim ./init.vim
+cp -r ~/.config/nvim/ ./nvim/
 echo -------
 echo success

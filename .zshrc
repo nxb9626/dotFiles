@@ -134,6 +134,8 @@ alias journal='~/./journal.sh'
 #alias docker='docker --rm'
 alias gs="git status"
 alias vs="code ."
+alias v="nvim"
+alias vim="nvim"
 #keybinds
 
 bindkey '^[[1;5D' backward-word
@@ -142,4 +144,4 @@ bindkey '^[[1;5C' forward-word
 # alias gupdate='git pull && git add . && git commit -m "Updating remote repo with recent additions lazily" && git push'
 # Use powerline
 USE_POWERLINE="true"
-
+alias emacs="emacs -nw"
