@@ -3,7 +3,6 @@ syntax on && syntax enable
 set lazyredraw ttyfast
 " side numbering; tab complete in commands; 3 line buffer between scrolling cursor buffer; enable mouse for all modes
 set number wildmenu scrolloff=3 mouse=a
-
 " tabs/spaces rendering
 set tabstop=2 softtabstop=0 shiftwidth=2 smarttab
 
@@ -12,12 +11,6 @@ set background=dark t_Co=256
 
 " allows undo persistence
 set undofile undodir=~/.config/vim/undodir
-
-" I meant to hit escape but am a dumb
-imap hhh <Esc>h3h
-imap jjj <Esc>h3j
-imap kkk <Esc>h3k
-imap lll <Esc>h3l
 
 " spelling is hard, but not enough to need spellcheck by default
 "set spell spelllang=en_us
@@ -42,7 +35,12 @@ noremap <Space>m @m
 " auto reloads when a file is changed (assuming no edits were made)
 set autoread
 " default behavior
-noremap <Space>f :w !prettier --write % <Enter><Enter>
+
 " language specific ~Fancy save~, formats and autoreloads if it makes sense
+noremap <Space>f :w !prettier --write % <Enter><Enter>
 autocmd FileType python noremap <Space>f :w !python3 -m black % <Enter><Enter>
 autocmd FileType vim noremap <Space>f :w <cr>
+
+" nvim fanciness contained to a separate file, all parts of this file work in
+" defualt vim
+"lua require('nvim_config')
