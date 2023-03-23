@@ -30,6 +30,11 @@ noremap <Space>k gT
 noremap <Space>h <C-w>h
 noremap <Space>l <C-w>l
 
+noremap <Space>- <C-o>
+noremap - gd
+
+noremap <Space><Esc> :noh<Enter>
+
 "macro key shortcut
 noremap <Space>m @m
 " auto reloads when a file is changed (assuming no edits were made)
@@ -37,7 +42,7 @@ set autoread
 " default behavior
 
 " language specific ~Fancy save~, formats and autoreloads if it makes sense
-noremap <Space>f :w !prettier --write % <Enter><Enter>
+noremap <Space>f :w !prettier --prose-wrap=always --write %<Enter><Enter>
 autocmd FileType python noremap <Space>f :w !python3 -m black % <Enter><Enter>
 autocmd FileType vim noremap <Space>f :w <cr>
 
